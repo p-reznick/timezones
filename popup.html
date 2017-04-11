@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TimeZones</title>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="handlebars-v4.0.5.js"></script>
+    <script src="popup_scripts.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul>
+      <script id="cityTemplate" type="text/x-handlebars-template">
+      {{#each cities}}
+      <li id={{id}}>
+        <div>
+          <h1>{{name}}</h1><span>Time Holder</span>
+        </div>
+      </li>
+      {{/each}}
+      </script>
+      <li id="addButton">
+        <script id="addTemplate" type="text/x-handlebars-template">
+        <form method="GET" action="">
+          <select name="city">
+            {{#each cities}}
+              <option value={{id}}>{{name}}</option>
+            {{/each}}
+          </select>
+          <button type="submit">Add City</button>
+        </form>
+        </script>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@import url("reset.css");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+h1 {
+  display: inline-block;
+  width: 100px;
+}
+
+div,
+li#addButton {
+  color: #fff;
+  background-color: #ccc;
+  width: 220px;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+li#addButton {
+  background-color: #fff;
+}
+
+div:hover {
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+span {
+  padding-left: 15px;
+}

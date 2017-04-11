@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name":"TimeZones",
+  "description":"Extension to show times in different cities around the world",
+  "version":"0.9",
+  "browser_action": {
+    "default_title":"TimeZones",
+    "default_icon":"icon.png",
+    "default_popup":"popup.html"
+  },
+  "icons": {
+    "16":"icon16.png",
+    "48":"icon48.png",
+    "128":"icon128.png"
+  },
+  "sandbox": {
+    "pages": ["popup.html"]
+  }
+}
