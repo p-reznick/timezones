@@ -15,5 +15,9 @@
   },
   "sandbox": {
     "pages": ["popup.html"]
-  }
+  },
+  "permissions": [
+          "storage",
+          "background"
+        ]
 }
